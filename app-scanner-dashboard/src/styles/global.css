@@ -1,0 +1,52 @@
+:root{
+  --bg:#f5f7fb;
+  --card:#fff;
+  --muted:#6b7280;
+  --shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:#111}
+
+.app{max-width:1200px;margin:28px auto;padding:18px}
+.header{display:flex;justify-content:space-between;align-items:center}
+.logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,#2563eb,#7c3aed);color:white;display:flex;align-items:center;justify-content:center;font-weight:700}
+.header h1{margin:0 12px;display:inline-block}
+.header .controls{display:flex;gap:8px;align-items:center}
+.btn{padding:8px 12px;border-radius:8px;border:1px solid #e6e9ef;background:#fff;cursor:pointer}
+.btn.secondary{background:#2563eb;color:#fff;border:none}
+.status{color:var(--muted)}
+
+.container{margin-top:18px}
+.top-row{display:flex;gap:16px;align-items:flex-start}
+.cards{display:flex;gap:12px;flex:1;flex-wrap:wrap}
+.card{background:var(--card);padding:12px;border-radius:10px;box-shadow:var(--shadow);min-width:160px}
+.card-label{font-size:12px;color:var(--muted)}
+.card-value{font-size:20px;font-weight:700}
+.chart-area{width:320px}
+
+.mid-row{display:flex;gap:16px;margin-top:18px}
+.left-col{flex:1}
+.right-col{width:360px}
+
+.searchbar{display:flex;justify-content:flex-end;margin-bottom:12px}
+.search-input{width:100%;max-width:380px;padding:10px 12px;border-radius:8px;border:1px solid #e6e9ef;background:#fff}
+
+.app-list{background:var(--card);padding:12px;border-radius:10px;box-shadow:var(--shadow);max-height:540px;overflow:auto}
+.app-item{display:flex;justify-content:space-between;padding:10px;border-bottom:1px solid #f1f5f9;cursor:pointer}
+.app-item:hover{background:#fbfdff}
+.app-title{font-weight:700}
+.app-sub{color:var(--muted);font-size:13px}
+
+.panel{background:var(--card);padding:12px;border-radius:10px;box-shadow:var(--shadow)}
+.meta-row{display:flex;gap:12px;margin-top:8px}
+.findings{margin-top:12px;display:flex;flex-direction:column;gap:8px;max-height:380px;overflow:auto}
+.finding{display:flex;justify-content:space-between;padding:8px;border-radius:8px;border:1px solid #f3f4f6}
+.finding-title{font-weight:600}
+.pill{padding:6px 8px;border-radius:8px;font-weight:700}
+.pill.high{background:#ef4444;color:#fff}
+.pill.med{background:#f59e0b;color:#111}
+.pill.low{background:#10b981;color:#fff}
+
+.chart-panel{background:var(--card);padding:12px;border-radius:10px;box-shadow:var(--shadow)}
+.muted{color:var(--muted)}
